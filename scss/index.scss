@@ -1,0 +1,113 @@
+@use 'colors' as c;
+@import 'common';
+
+$radius: 5px;
+
+#title {
+    color: c.$white;
+    font-family: 'AdamCG';
+    padding: 0 5vw;
+    line-height: 2rem;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    line-height: 0;
+    padding-bottom: 10%;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: darken(c.$white, 50);
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blurple {
+    fill: #ffffff;
+    color: #ffffff;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    box-shadow: 0 0 8px;
+
+    top {
+        height: 70%;
+        display: flex;
+        justify-content: center;
+
+        .icon {
+            width: 60%;
+        }
+    }
+
+    bottom {
+        background-color: c.$white;
+        height: 30%;
+        border-radius: 0 0 $radius $radius;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .button {
+            width: 50%;
+            height: 40px;
+            border: none;
+            text-align: center;
+            vertical-align: middle;
+            background-color: c.$black;
+            border-radius: $radius;
+            box-shadow: 0 0 4px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: 'Roboto';
+            font-weight: 500;
+            color: c.$white;
+
+            transition: background-color 0.3s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &#education:hover {
+                background-color: c.$purple;
+            }
+
+            &#experience:hover {
+                background-color: c.$green;
+            }
+
+            &#projects:hover {
+                background-color: c.$orange;
+            }
+
+            &#links:hover {
+                background-color: c.$blue;
+            }
+        }
+    }
+}

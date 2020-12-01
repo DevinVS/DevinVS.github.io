@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "AdamCG";
+  src: url("../fonts/ADAM.CG PRO.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+a, a:link, a:any-link, a:visited, a:active {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+#back {
+  color: #f2f2f2;
+  background-color: #1a1a1a;
+  font-family: "Roboto";
+  font-size: 2em;
+  padding: 16px;
+  vertical-align: middle;
+  width: 100vw;
+  box-shadow: 0 0 8px #000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+#back a:hover {
+  color: #bfbfbf;
+}
+
+.content {
+  margin-top: 160px;
+}
+.content h1 {
+  font-family: Helvetica;
+  background: url("../assets/purle_back.png") center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0 5vw;
+  font-size: 7rem;
+}
+
+/*# sourceMappingURL=education.css.map */

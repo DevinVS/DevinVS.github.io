@@ -1,0 +1,23 @@
+@use 'colors' as c;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'AdamCG';
+    src: url("../fonts/ADAM.CG\ PRO.otf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: c.$black;
+}
+
+a, a:link, a:any-link, a:visited, a:active {
+    text-decoration: none;
+    color: c.$white;
+}

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "AdamCG";
+  src: url("../fonts/ADAM.CG PRO.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+a, a:link, a:any-link, a:visited, a:active {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+#title {
+  color: #f2f2f2;
+  font-family: "AdamCG";
+  padding: 0 5vw;
+  line-height: 2rem;
+  margin-top: 10%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  line-height: 0;
+  padding-bottom: 10%;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: #737373;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.blurple {
+  fill: #ffffff;
+  color: #ffffff;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 8px;
+}
+.card top {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.card top .icon {
+  width: 60%;
+}
+.card bottom {
+  background-color: #f2f2f2;
+  height: 30%;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card bottom .button {
+  width: 50%;
+  height: 40px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  box-shadow: 0 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #f2f2f2;
+  transition: background-color 0.3s;
+}
+.card bottom .button:hover {
+  cursor: pointer;
+}
+.card bottom .button#education:hover {
+  background-color: #a56cc4;
+}
+.card bottom .button#experience:hover {
+  background-color: #83bd68;
+}
+.card bottom .button#projects:hover {
+  background-color: #de8b50;
+}
+.card bottom .button#links:hover {
+  background-color: #5b8bd6;
+}
+
+/*# sourceMappingURL=index.css.map */

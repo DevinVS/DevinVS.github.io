@@ -1,0 +1,78 @@
+@use 'colors' as c;
+@import 'common';
+@import 'header';
+
+.content {
+    margin-top: 160px;
+
+    h1 {
+        font-family: Helvetica;
+        background: url("../assets/orange_back.png") center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 0 5vw;
+        font-size: 7rem;
+    }
+}
+
+#list {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    .item:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    .item {
+        box-shadow: 0 0 6px #000000;
+        width: 80vw;
+        border-bottom: 5px solid c.$orange;
+
+        font-family: 'Roboto';
+        
+        margin-bottom: 50px;
+
+        color: c.$white;
+
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+
+        grid-template-areas: 
+        "title title title"
+        "text text text"
+        "button button button";
+
+        .item-title {
+            grid-area: title;
+            font-size: 2rem;
+
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+        .item-text {
+            grid-area: text;
+            color: darken(c.$white, 25);
+            padding-left: 40px;
+            padding-top: 10px;
+        }
+
+        .item-button {
+            grid-area: button;
+
+            margin: 16px 16px 0 0;
+            color: white;
+
+            font-size: 1.2em;
+            padding-left: 20px;
+            line-height: 0;
+
+            &:hover {
+                color: c.$orange;
+            }
+        }
+    }
+}

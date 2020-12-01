@@ -1,0 +1,17 @@
+@use 'colors' as c;
+@import 'common';
+@import 'header';
+
+.content {
+    margin-top: 160px;
+
+    h1 {
+        font-family: Helvetica;
+        background: url("../assets/green_back.png") center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        padding: 0 5vw;
+        font-size: 7rem;
+    }
+}

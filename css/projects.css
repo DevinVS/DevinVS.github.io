@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "AdamCG";
+  src: url("../fonts/ADAM.CG PRO.otf");
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+}
+
+a, a:link, a:any-link, a:visited, a:active {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+#back {
+  color: #f2f2f2;
+  background-color: #1a1a1a;
+  font-family: "Roboto";
+  font-size: 2em;
+  padding: 16px;
+  vertical-align: middle;
+  width: 100vw;
+  box-shadow: 0 0 8px #000000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+#back a:hover {
+  color: #bfbfbf;
+}
+
+.content {
+  margin-top: 160px;
+}
+.content h1 {
+  font-family: Helvetica;
+  background: url("../assets/orange_back.png") center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding: 0 5vw;
+  font-size: 7rem;
+}
+
+#list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+#list .item:nth-child(even) {
+  align-self: flex-end;
+}
+#list .item {
+  box-shadow: 0 0 6px #000000;
+  width: 80vw;
+  border-bottom: 5px solid #de8b50;
+  font-family: "Roboto";
+  margin-bottom: 50px;
+  color: #f2f2f2;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas: "title title title" "text text text" "button button button";
+}
+#list .item .item-title {
+  grid-area: title;
+  font-size: 2rem;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+#list .item .item-text {
+  grid-area: text;
+  color: #b2b2b2;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+#list .item .item-button {
+  grid-area: button;
+  margin: 16px 16px 0 0;
+  color: white;
+  font-size: 1.2em;
+  padding-left: 20px;
+  line-height: 0;
+}
+#list .item .item-button:hover {
+  color: #de8b50;
+}
+
+/*# sourceMappingURL=projects.css.map */
